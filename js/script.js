@@ -1,11 +1,13 @@
+import ScrollSuave from './modules/scroll-suave';
 import initmenuMobile from './modules/menu-mobile';
 import initAnimacaoScroll from './modules/scroll-animacao';
-import initScrollSuave from './modules/scroll-suave';
 import initWritingEffect from './modules/writing-effect';
 import initFuncionamento from './modules/funcionamento';
 
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
+
 initFuncionamento();
-initScrollSuave();
 initAnimacaoScroll();
 initmenuMobile();
 initWritingEffect();

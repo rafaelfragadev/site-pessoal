@@ -17,9 +17,10 @@
   overflow-y: hidden;
   } 
   #nav.active #menu {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 88px);
     visibility: visible;
     overflow-x: auto;
+    top: 88px;
   }
   #menu a {
     padding: 2rem 0;

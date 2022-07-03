@@ -11,6 +11,8 @@
 }
 .introducao-conteudo {
   text-align: center;
+  padding: 6rem 0 0;
+  overflow: hidden;
 }
 .introducao-conteudo p {
   margin-top: 15px;
@@ -89,6 +91,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 25px;
   }
+  
   .introducao-conteudo h1 {
     min-height: 130px;
   }

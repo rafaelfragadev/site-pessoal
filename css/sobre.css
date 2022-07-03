@@ -1,0 +1,35 @@
+.sobre-bg {
+  background-color: var(--cor-2);
+}
+.sobre-conteudo h2 {
+  margin-bottom: 20px;
+}
+.sobre-flex{
+  display: flex;
+  align-items: center;
+  padding: 70px 0;
+  flex-wrap: wrap;
+}
+.sobre-conteudo p {
+  max-width: 535px;
+}
+.sobre-conteudo {
+  margin-left: 35px;
+  flex: 1;
+}
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  align-items: center;
+}
+
+@media(max-width: 900px){
+  .sobre-flex {
+    flex-direction: column-reverse;
+  }
+  .sobre-conteudo {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}

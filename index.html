@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Fraga - Designer e Desenvolvedor Front End</title>
+    <meta name="description" content="Criação de sites, identidade visual, landing pages, e-mail marketing, design gráfico e serviços relacionados a área.">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.className += ' js';</script>
+
+  </head>
+<body>
+  <header id="header" class="header bg">
+      <a href="./"><img src="./img/icons/logo.svg" width="242" height="35.5" alt="Logo"></a>
+      <nav class="js-menu" id="nav" aria-label="primária">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-haspopup="true" aria-controls="menu">Menu<span id="hamburger"></span></button>
+        <ul data-menu="list" id="menu" role="menu" class="font-1-p cor-0">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main id="introducao" class="espacamento-inicial bg">
+  <section class="introducao-conteudo">
+    <picture class="img-container">
+      <source media="(max-width: 800px)" srcset="./img/perfil/foto-perfil.png">
+      <img src="./img/perfil/foto-perfil.png" width="266" height="266" alt="Rafael Fraga">
+    </picture>
+      <h1 class="writing font-1-t cor-0">Olá, eu sou Rafael Fraga</h1>
+      <p class="writing font-2-p cor-1">Designer e Desenvolvedor Front End.</p>
+  </section>
+
+  <section class="cards-introducao container">
+    <div class="card-inicio">
+      <p class="font-3-st cor-1">01</p>
+      <h3 class="font-3-t cor-0">Dedicação</h3>
+      <p class="font-3-p cor-1">Para se ter bons resultados nessa área, não basta apenas conhecimento, é preciso muita dedicação e se atualizar constantemente.</p>
+    </div>
+
+    <div class="card-inicio">
+      <p class="font-3-st cor-1">02</p>
+      <h3 class="font-3-t cor-0">Conhecimento</h3>
+      <p class="font-3-p cor-1">São mais de <strong>20 cursos</strong> na área além da <strong>graduação</strong>, é preciso estar sempre buscando conhecimento e se atualizar sobre as tendências.</p>
+    </div>
+
+    <div class="card-inicio col-3">
+      <p class="font-3-st cor-1">03</p>
+      <h3 class="font-3-t cor-0">Autenticidade</h3>
+      <p class="font-3-p cor-1">Cada projeto é <strong>único</strong>, e isso é o que quero trazer para os meus clientes, pois acredito que todos nós queremos <strong>fazer a diferença
+      </strong>para ajudar o próximo.</p>
+    </div>
+  </section>
+  </main>
+
+<section id="sobre" class="sobre-bg">
+<div data-anime="scroll" class="container sobre-flex">
+  <picture>
+    <source media="(max-width: 800px)" srcset="./img/perfil/foto-sobre.png">
+    <img src="./img/perfil/foto-sobre.png" width="510" height="459" alt="Sobre Rafael Fraga">
+  </picture>
+  <div class="sobre-conteudo">
+    <h2 class="font-2-t cor-0">Sobre<span>;</span></h2>
+    <p class="font-1-p cor-1">Formado em <strong>Produção Multimídia</strong> na <strong>FADERGS</strong> em 2019, possuo quase <strong>10 anos de experiência</strong> na área.</p>
+    <p class="font-1-p cor-1">Durante esse tempo trabalhei como freelancer e com CLT.</p>
+    <p class="font-1-p cor-1"> Prezo muito pela qualidade nos meus serviços, acredito ser essêncial para realizar um bom projeto.</p>
+
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/rfraga_design/" target="_blank">
+      <img src="./img/social-media/instagram.svg" alt="Instagram"></a>
+      <a href="https://www.facebook.com/rtfraga/" target="_blank">
+      <img src="./img/social-media/facebook.svg" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/rafael-fraga-79804a78/" target="_blank">
+      <img src="./img/social-media/linkedin.svg" alt="Linkedin"></a>
+      <a href="https://www.behance.net/rafaelfraga" target="_blank">
+      <img src="./img/social-media/behance.svg" alt="Behance"></a>
+      <a href="https://github.com/rafaelfragadev" target="_blank">
+      <img src="./img/social-media/github.svg" alt="Github"></a>  
+    </div>
+    <a class="botao" href="#">Dowload CV</a>
+
+</div>
+</section>
+
+<section id="servicos" class="espacamento bg">
+  <div data-anime="scroll" class="container">
+  <article class="servicos">
+      <h2 class="font-2-t cor-0">Meus Serviços<span>;</span></h2>
+      <p class="font-1-p cor-1">Confira a lista de serviços que ofereço. Dúvidas? Entre em contato comigo agora mesmo.</p>
+  </article>
+
+  <section class="boxs-servicos">
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/sites.svg" alt="Criação de Sites">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">Criação de Sites</h3>
+        <p class="font-3-p">Sites Institucionais, One Page, Portfólio e Lançamentos.</p>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/identidade-visual.svg" alt="Identidade Visual">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">Identidade Visual</h3>
+        <p class="font-3-p">Projeto para a criação de Identidade Visual empresarial.</p>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/design-gráfico.svg" alt="Design Gráfico">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">Design Gráfico</h3>
+        <p class="font-3-p">Cartões de Visita, Flyers, Capa Facebook, Adesivos.</p>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/e-mail-marketing.svg" alt="E-Mail Marketing">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">E-Mail Marketing</h3>
+        <p class="font-3-p">Criação de E-Mail Marketing para vendas e campanhas.</p>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/lp.svg" alt="Landing Pages">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">Landing Pages</h3>
+        <p class="font-3-p">LPs para vendas, captação de clientes e divulgação.</p>
+      </div>
+    </article>
+
+    <article class="box">
+      <div class="icone-servicos">
+        <img src="./img/icons/parceria.svg" alt="Parcerias">
+      </div>
+      <div class="conteudo-box">
+        <h3 class="font-3-st cor-0">Parcerias</h3>
+        <p class="font-3-p">Quer ser meu parceiro para algum projeto ou serviço?</p>
+      </div>
+    </article>
+  </div>
+</section>
+</section>
+
+<section id="portfolio" class="bg">
+  <div data-anime="scroll" class="container">
+  <article class="portfolio">
+    <h2 class="font-2-t cor-0">Portfólio<span>;</span></h2>
+    <p class="font-1-p cor-1">Alguns dos serviços que realizei durante a minha trajetória profissional.</p>
+  </article>
+
+<section class="card">
+
+<article class="card-portfolio">
+    <div class="card-conteudo">
+      <div class="card-titulos">
+        <p class="font-3-p cor-1">Identidade Visual</p>
+        <h4 class="font-3-st cor-0">SOS Tributo</h4>
+       </div>
+      <div class="icone-portfolio">
+      <a href="https://www.behance.net/gallery/117831383/SOS-Tributo">
+        <img src="./img/social-media/behance.svg" alt="Behance">
+      </a>
+    </div>
+  </div>
+  <div class="thumb-portfolio">
+    <img src="./img/thumbs/thumb-sos.png" alt="SOS Tributo">
+  </div>
+
+</article>
+
+<article class="card-portfolio">
+<div class="card-conteudo">
+  <div class="card-titulos">
+  <p class="font-3-p cor-1">Site</p>
+  <h4 class="font-3-st cor-0">Vidente Ida Profes</h4>
+</div>
+<div class="icone-portfolio">
+  <a href="https://videnteidaprofes.com.br/" target="_blank">
+    <img src="./img/social-media/web.svg" alt="Site Ida Profes">
+  </a>
+</div>
+</div>
+<div class="thumb-portfolio">
+  <img src="./img/thumbs/thumb-idaprofes.png" alt="Vidente Ida Profes">
+</div>
+
+</article>
+
+<article class="card-portfolio">
+ <div class="card-conteudo">
+    <div class="card-titulos">
+    <p class="font-3-p cor-1">Site e Identidade Visual</p>
+    <h4 class="font-3-st cor-0">Ramos Pereira</h4>
+  </div>
+
+<div class="icone-portfolio">
+  <a href="https://ramospereiraadvocacia.com.br/" target="_blank">
+    <img src="./img/social-media/web.svg" alt="Site Ramos Pereira">
+  </a>
+  <a href="https://www.behance.net/gallery/104696463/Ramos-Pereira-Advocacia" target="_blank">
+    <img src="./img/social-media/behance.svg" alt="Identidade Visual Ramos Pereira no Behance">
+  </a>
+</div> 
+</div>
+
+<div class="thumb-portfolio">
+  <img src="./img/thumbs/thumb-ramospereira.png" alt="Ramos Pereira Advocacia">
+</div>
+</article>
+
+</section>
+
+<a class="botao" href="https://www.behance.net/rafaelfraga" target="_blank">Ver Mais</a>
+</div>
+</section>
+
+<div class="bg">
+<div data-anime="scroll" class="skills container">
+  <div class="icone-html">
+   <img src="./img/skills/HTML5.svg" width="81" height="92" alt="HTML5">
+  </div>
+
+  <div class="icone-css">
+    <img src="./img/skills/CSS3.svg" width="81" height="92" alt="CSS3">
+   </div>
+
+   <div class="icone-js">
+    <img src="./img/skills/JS.svg" width="81" height="92" alt="JS">
+   </div>
+
+   <div class="icone-wordpress">
+    <img src="./img/skills/WordPress.svg" width="92" height="92" alt="WordPress">
+   </div>
+
+   <div class="icone-figma">
+    <img src="./img/skills/Figma.svg" width="59" height="92" alt="Figma">
+   </div>
+
+   <div class="icone-ps">
+    <img src="./img/skills/Ps.svg" width="92" height="92" alt="Photoshop">
+   </div>
+
+   <div class="icone-ai">
+    <img src="./img/skills/Ai.svg" width="92" height="92" alt="Illustrator">
+   </div>
+
+   <div class="icone-ae">
+    <img src="./img/skills/Ae.svg" width="92" height="92" alt="After Effects">
+   </div>
+</div>
+</div>
+
+<footer class="footer bg">
+
+<section id="contato" class="contato">
+  <div data-anime="scroll" class="container contato-bg">
+  <section class="contato-dados">
+    <h2 class="font-4-t cor-0">Contato<span>;</span></h2>
+    <p class="font-1-p cor-0"><strong>Vamos começar nosso projeto !</strong></p>
+    <p class="font-1-p cor-0">Entre em contato agora mesmo e tire todas as suas dúvidas.</p>
+    <address class="meios-de-contato">
+      <h4 class="font-3-st cor-0">E-Mail</h4>
+      <p class="font-1-p cor-0">rafaelfragawebdesigner@gmail.com</p>
+       <h4 class="font-3-st cor-0">Telefone</h4>
+        <p class="font-1-p cor-0">(51) 9 9815-4767</p>
+    </address>
+
+    <div class="atendimento">
+      <p class="font-1-p cor-0" data-semana="1,2,3,4,5" data-horario="8,18">Segunda à Sexta das 8 às 18</p>
+      <span></span>
+    </div>
+
+  </section>
+
+    <section class="contato-formulario" aria-label="Formulário">
+      <form id="form" action="" method="POST">
+        <div>
+          <label for=""></label>
+          <input type="text" id="nome" name="nome" placeholder="Nome">
+        </div>
+        <div>
+          <label for=""></label>
+          <input type="text" id="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <div class="col-2">
+          <label for=""></label>
+          <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
+        </div>
+        <div class="col-2">
+          <label for="mensagem"></label>
+          <textarea rows="5" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+        </div>
+        <button class="botao col-2">Enviar Mensagem</button>
+      </form>
+    </section>
+  </div>
+</section>
+
+  <div class="copy">
+    <div class="container copy-conteudo">
+      <div class="logo-rodape">
+        <img src="./img/icons/icon-logo.svg" alt="Logo Rodapé">
+        <p class="font-1-p cor-2">2022 © Todos os direitos Reservados.</p>
+      </div>
+      <div class="icones-rodape">
+        <a href="https://www.instagram.com/rfraga_design/" target="_blank">
+          <img src="./img/social-media/instagram-footer.svg" alt="Instagram"></a>
+          <a href="https://www.facebook.com/rtfraga/" target="_blank">
+          <img src="./img/social-media/facebook-footer.svg" alt="Facebook"></a>
+          <a href="https://www.linkedin.com/in/rafael-fraga-79804a78/" target="_blank">
+          <img src="./img/social-media/linkedin-footer.svg" alt="Linkedin"></a>
+          <a href="https://www.behance.net/rafaelfraga" target="_blank">
+          <img src="./img/social-media/behance-footer.svg" alt="Behance"></a>
+          <a href="https://github.com/rafaelfragadev" target="_blank">
+          <img src="./img/social-media/github-footer.svg" alt="Github"></a>  
+      </div>
+    </div>
+</div>  
+  </footer>
+  <script src="./main.js"></script> 
+</body>
+</html>

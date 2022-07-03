@@ -1,0 +1,67 @@
+#btn-mobile {
+  display: none;
+}
+
+@media(max-width: 900px){
+ #menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  right: 0;
+  height: 0;
+  transition: .6s;
+  background-color: var(--cor-2);
+  z-index: 1000;
+  visibility: hidden;
+  overflow-y: hidden;
+  } 
+  #nav.active #menu {
+    height: calc(100vh - 110px);
+    visibility: visible;
+    overflow-x: auto;
+  }
+  #menu a {
+    padding: 2rem 0;
+    margin: 0 1rem;
+    border-bottom: 1px solid var(--cor-4);
+  }
+
+  #btn-mobile {
+    font: 400 1rem/1 "Poppins", sans-serif;
+    color: var(--cor-0);
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+  #hamburger {
+    color: var(--cor-0);
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    background: currentColor;
+    transition: .3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

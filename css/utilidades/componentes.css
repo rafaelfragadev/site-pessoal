@@ -1,0 +1,51 @@
+.container {
+  max-width: 1110px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botao {
+  padding: 15px 31px;
+  display: inline-block;
+  background: var(--cor-p1);
+  border-radius: 4px;
+  box-shadow: 0 0 10px #FF333E;
+  color: var(--cor-0);
+  font: 400 1rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.botao:hover {
+  box-shadow: 0 0 15px 1px #FF333E;
+  border-radius: 0px;
+}
+
+.titulos {
+  text-align: center;
+  padding: 70px 0;
+  gap: 15px;
+}
+
+.titulos h2 {
+  margin-bottom: 20px;
+}
+
+[data-semana]::after {
+  display: inline-block;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color:  #FF333E;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid var(--cor-4);
+}
+
+[data-semana].aberto::after{
+  background: #33FF44;
+}

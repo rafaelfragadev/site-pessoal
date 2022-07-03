@@ -1,0 +1,143 @@
+.contato .container {
+  max-width: 1050px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.contato-dados h2 {
+  margin-bottom: 20px;
+}
+.contato-dados p {
+  max-width: 292px;
+}
+.meios-de-contato p {
+  margin: 5px 0 20px 0;
+}
+.contato p + p {
+  margin-bottom: 30px;
+}
+.contato-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-2);
+}
+
+.contato {
+  box-shadow: inset 0 -120px var(--cor-0);
+}
+
+/* Formulário */
+
+#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+#form label {
+  display: block;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+#form .col-2 {
+  grid-column: span 2;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form textarea {
+  color: var(--cor-1);
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+  background: var(--cor-4);
+  border: solid 1px var(--cor-2);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+#form input[type="text"]:focus,
+#form input[type="email"]:focus,
+#form textarea:focus {
+  outline: none;
+  color: var(--cor-4);
+  border-color: var(--cor-p1);
+  background: var(--cor-3);
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+@media(max-width: 950px){
+ 
+  .contato .container {
+    padding: 50px;
+  }
+  #form {
+    grid-template-columns: 1fr;
+  }
+  #form .col-2 {
+    grid-column: 1;
+  }
+}
+@media (max-width: 770px) {
+  .contato .container {
+    grid-template-columns: 1fr;
+  }
+  .contato-dados {
+    margin-bottom: 1rem;
+  }
+  #form {
+    grid-template-columns: 1fr 1fr;
+  }
+  #form .col-2 {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 600px) {
+  #form {
+    grid-template-columns: 1fr;
+  }
+  #form .col-2 {
+    grid-column: 1;
+  }
+}
+
+
+/* Copy */
+.copy {
+  background-color: var(--cor-0);
+  padding: 25px;
+}
+.copy-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logo-rodape {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icones-rodape {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+@media(max-width: 700px) {
+  .copy-conteudo {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 500px) {
+  .logo-rodape {
+    flex-direction: column;
+  }
+  .copy-conteudo {
+    text-align: center;
+  }
+}

@@ -7,6 +7,7 @@ import initFuncionamento from './modules/funcionamento';
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
+
 initFuncionamento();
 initAnimacaoScroll();
 initmenuMobile();

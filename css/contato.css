@@ -70,7 +70,7 @@
 @media(max-width: 950px){
  
   .contato .container {
-    padding: 50px;
+    padding: 40px 20px;
   }
   #form {
     grid-template-columns: 1fr;
@@ -100,6 +100,9 @@
   }
   #form .col-2 {
     grid-column: 1;
+  }
+  #header {
+    justify-content: space-between;
   }
 }
 

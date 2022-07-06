@@ -12,6 +12,7 @@ const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
 initFormulario();
+
 initFuncionamento();
 initmenuMobile();
 initWritingEffect();

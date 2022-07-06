@@ -6,7 +6,7 @@ const formulario = document.querySelector('form');
 
 function formularioEnviado(resposta){
   if(resposta.ok) {
-    formulario.innerHTML = '<p class="font-1-p cor-4" style="padding: 2rem; border-radius: 4px; background: var(--cor-0);"><span class="cor-p2 font-3-t">Mensagem enviada,</span> em breve entrarei em contato. Geralmente respondo em até 24 horas.</p>';
+    formulario.innerHTML = '<p class="font-1-p cor-4" style="padding: 2rem; border-radius: 4px; background: var(--cor-p3);"><span class="cor-p2 font-3-t">Mensagem enviada,</span><br>em breve entrarei em contato. Geralmente respondo em até 24 horas.</p>';
   } else {
     formulario.innerHTML = '<p class="font-1-p cor-4" style="padding: 2rem; border-radius: 4px; background: var(--cor-0);"><span class="cor-p1 font-3-t">Erro no envio,</span><br>você pode enviar diretamente para o nosso e-mail em: contato@rafaelfragawebdesigner.com.br</p>';
   }

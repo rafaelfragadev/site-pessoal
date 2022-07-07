@@ -30,6 +30,13 @@
   padding: 70px 0;
   gap: 15px;
 }
+.intro, .intro-sub{
+  text-align: center;
+}
+
+.intro-sub {
+  margin-top: 10px;
+}
 
 .titulos h2 {
   margin-bottom: 20px;

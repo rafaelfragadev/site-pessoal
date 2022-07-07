@@ -6,12 +6,7 @@
   background: var(--cor-2);
   margin: 75px auto 0 auto;
 }
-.servicos {
-  text-align: center;
-}
-.servicos p {
-  margin-top: 10px;
-}
+
 .boxs-servicos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -24,7 +19,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
   background: var(--cor-2);
   border-radius: 3px;

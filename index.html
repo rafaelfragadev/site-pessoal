@@ -30,38 +30,38 @@
   </header>
 
   <main id="introducao" class="espacamento-inicial bg">
-  <section class="introducao-conteudo">
+  <div class="introducao-conteudo container">
     <picture class="img-container">
       <source media="(max-width: 800px)" srcset="./img/perfil/foto-perfil.png">
       <img src="./img/perfil/foto-perfil.png" width="266" height="266" alt="Rafael Fraga">
     </picture>
       <h1 class="writing font-1-t cor-0">Olá, eu sou Rafael Fraga</h1>
       <p class="writing font-2-p cor-1">Designer e Desenvolvedor Front End.</p>
-  </section>
+  </div>
 
-  <section class="cards-introducao container">
-    <div class="card-inicio">
+  <ul class="cards-introducao container">
+    <li class="card-inicio">
       <p class="font-3-st cor-1">01</p>
       <h3 class="font-3-t cor-0">Dedicação</h3>
       <p class="font-3-p cor-1">Para se ter bons resultados nessa área, não basta apenas conhecimento, é preciso muita dedicação e se atualizar constantemente.</p>
-    </div>
+    </li>
 
-    <div class="card-inicio">
+    <li class="card-inicio">
       <p class="font-3-st cor-1">02</p>
       <h3 class="font-3-t cor-0">Conhecimento</h3>
       <p class="font-3-p cor-1">São mais de <strong>20 cursos</strong> na área além da <strong>graduação</strong>, é preciso estar sempre buscando conhecimento e se atualizar sobre as tendências.</p>
-    </div>
+    </li>
 
-    <div class="card-inicio col-3">
+    <li class="card-inicio">
       <p class="font-3-st cor-1">03</p>
       <h3 class="font-3-t cor-0">Autenticidade</h3>
-      <p class="font-3-p cor-1">Cada projeto é <strong>único</strong>, e isso é o que quero trazer para os meus clientes, pois acredito que todos nós queremos <strong>fazer a diferença
-      </strong>para ajudar o próximo.</p>
-    </div>
-  </section>
+      <p class="font-3-p cor-1">Cada projeto é <strong>único</strong>, e isso é o que quero trazer para os meus clientes, pois acredito que todos nós queremos <strong>fazer a diferença</strong> para ajudar o próximo.</p>
+    </li>
+
+  </ul>
   </main>
 
-<section id="sobre" class="sobre-bg">
+<article id="sobre" class="sobre-bg">
 <div data-anime="scroll" class="container sobre-flex">
   <picture>
     <source media="(max-width: 800px)" srcset="./img/perfil/foto-sobre.png">
@@ -88,18 +88,16 @@
     <a class="botao" download="CV Rafael Fraga.pdf" href="./download/CV-Rafael-Fraga_compressed.pdf">Dowload CV</a>
 
 </div>
-</section>
+</article>
 
-<section id="servicos" class="espacamento bg">
+<article id="servicos" class="espacamento bg">
   <div data-anime="scroll" class="container">
-  <article class="servicos">
-      <h2 class="font-2-t cor-0">Meus Serviços<span>;</span></h2>
-      <p class="font-1-p cor-1">Confira a lista de serviços que ofereço. Dúvidas? Entre em contato comigo agora mesmo.</p>
-  </article>
 
-  <section class="boxs-servicos">
+  <h2 class="intro font-2-t cor-0">Meus Serviços<span>;</span></h2>
+  <p class="intro-sub font-1-p cor-1">Confira a lista de serviços que ofereço. Dúvidas? Entre em contato comigo agora mesmo.</p>
 
-    <article class="box">
+  <ul class="boxs-servicos">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/sites.svg" alt="Criação de Sites">
       </div>
@@ -107,9 +105,9 @@
         <h3 class="font-3-st cor-0">Criação de Sites</h3>
         <p class="font-3-p">Sites Institucionais, One Page, Portfólio e Lançamentos.</p>
       </div>
-    </article>
+    </li>
 
-    <article class="box">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/identidade-visual.svg" alt="Identidade Visual">
       </div>
@@ -117,9 +115,9 @@
         <h3 class="font-3-st cor-0">Identidade Visual</h3>
         <p class="font-3-p">Projeto para a criação de Identidade Visual empresarial.</p>
       </div>
-    </article>
+    </li>
 
-    <article class="box">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/design-gráfico.svg" alt="Design Gráfico">
       </div>
@@ -127,9 +125,9 @@
         <h3 class="font-3-st cor-0">Design Gráfico</h3>
         <p class="font-3-p">Cartões de Visita, Flyers, Capa Facebook, Adesivos.</p>
       </div>
-    </article>
+    </li>
 
-    <article class="box">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/e-mail-marketing.svg" alt="E-Mail Marketing">
       </div>
@@ -137,9 +135,9 @@
         <h3 class="font-3-st cor-0">E-Mail Marketing</h3>
         <p class="font-3-p">Criação de E-Mail Marketing para vendas e campanhas.</p>
       </div>
-    </article>
+    </li>
 
-    <article class="box">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/lp.svg" alt="Landing Pages">
       </div>
@@ -147,9 +145,9 @@
         <h3 class="font-3-st cor-0">Landing Pages</h3>
         <p class="font-3-p">LPs para vendas, captação de clientes e divulgação.</p>
       </div>
-    </article>
+    </li>
 
-    <article class="box">
+    <li class="box">
       <div class="icone-servicos">
         <img src="./img/icons/parceria.svg" alt="Parcerias">
       </div>
@@ -157,83 +155,67 @@
         <h3 class="font-3-st cor-0">Parcerias</h3>
         <p class="font-3-p">Quer ser meu parceiro para algum projeto ou serviço?</p>
       </div>
-    </article>
+    </li>
   </div>
-</section>
-</section>
 
-<section id="portfolio" class="bg">
-  <div data-anime="scroll" class="container">
-  <article class="portfolio">
-    <h2 class="font-2-t cor-0">Portfólio<span>;</span></h2>
-    <p class="font-1-p cor-1">Alguns dos serviços que realizei durante a minha trajetória profissional.</p>
-  </article>
+</article>
 
-<section class="card">
+<article id="portfolio" class="bg">
+  <div data-anime="scroll" class="portfolio container">
+    <h2 class="intro font-2-t cor-0">Portfólio<span>;</span></h2>
+    <p class="intro-sub font-1-p cor-1">Alguns dos serviços que realizei durante a minha trajetória profissional.</p>
 
-<article class="card-portfolio">
-    <div class="card-conteudo">
-      <div class="card-titulos">
+  <div class="lista-portfolio">
+    <div class="item-portfolio">
+      <div class="box-itens">
+       <div class="item-titulo">
         <p class="font-3-p cor-1">Identidade Visual</p>
         <h4 class="font-3-st cor-0">SOS Tributo</h4>
-       </div>
-      <div class="icone-portfolio">
-      <a href="https://www.behance.net/gallery/117831383/SOS-Tributo" target="_blank">
-        <img src="./img/social-media/behance.svg" alt="Behance">
-      </a>
+      </div>
+      <div class="item-link">
+        <a href="https://www.behance.net/gallery/117831383/SOS-Tributo" target="_blank">
+          <img src="./img/social-media/behance.svg" alt="Behance">
+        </a>
+      </div>
+    </div>
+        <img src="./img/thumbs/thumb-sos.png" alt="SOS Tributo">
+    </div>
+    <div class="item-portfolio">
+      <div class="box-itens">
+        <div class="item-titulo">
+          <p class="font-3-p cor-1">Site</p>
+          <h4 class="font-3-st cor-0">Vidente Ida Profes</h4>
+        </div>
+        <div class="item-link">
+          <a href="https://videnteidaprofes.com.br/" target="_blank">
+            <img src="./img/social-media/web.svg" alt="Site Ida Profes">
+          </a>
+        </div>
+      </div>
+      <img src="./img/thumbs/thumb-idaprofes.png" alt="Vidente Ida Profes">
+    </div>
+    <div class="item-portfolio">
+      <div class="box-itens">
+        <div class="item-titulo">
+          <p class="font-3-p cor-1">Site e Identidade Visual</p>
+          <h4 class="font-3-st cor-0">Ramos Pereira</h4>
+        </div>
+        <div class="item-link">
+          <a href="https://ramospereiraadvocacia.com.br/" target="_blank">
+            <img src="./img/social-media/web.svg" alt="Site Ramos Pereira">
+          </a>
+        <a href="https://www.behance.net/gallery/104696463/Ramos-Pereira-Advocacia" target="_blank">
+          <img src="./img/social-media/behance.svg" alt="Identidade Visual Ramos Pereira no Behance">
+        </a>
+        </div>
+      </div>
+      <img src="./img/thumbs/thumb-ramospereira.png" alt="Ramos Pereira Advocacia">
     </div>
   </div>
-  <div class="thumb-portfolio">
-    <img src="./img/thumbs/thumb-sos.png" alt="SOS Tributo">
-  </div>
 
-</article>
-
-<article class="card-portfolio">
-<div class="card-conteudo">
-  <div class="card-titulos">
-  <p class="font-3-p cor-1">Site</p>
-  <h4 class="font-3-st cor-0">Vidente Ida Profes</h4>
-</div>
-<div class="icone-portfolio">
-  <a href="https://videnteidaprofes.com.br/" target="_blank">
-    <img src="./img/social-media/web.svg" alt="Site Ida Profes">
-  </a>
-</div>
-</div>
-<div class="thumb-portfolio">
-  <img src="./img/thumbs/thumb-idaprofes.png" alt="Vidente Ida Profes">
-</div>
-
-</article>
-
-<article class="card-portfolio">
- <div class="card-conteudo">
-    <div class="card-titulos">
-    <p class="font-3-p cor-1">Site e Identidade Visual</p>
-    <h4 class="font-3-st cor-0">Ramos Pereira</h4>
-  </div>
-
-<div class="icone-portfolio">
-  <a href="https://ramospereiraadvocacia.com.br/" target="_blank">
-    <img src="./img/social-media/web.svg" alt="Site Ramos Pereira">
-  </a>
-  <a href="https://www.behance.net/gallery/104696463/Ramos-Pereira-Advocacia" target="_blank">
-    <img src="./img/social-media/behance.svg" alt="Identidade Visual Ramos Pereira no Behance">
-  </a>
-</div> 
-</div>
-
-<div class="thumb-portfolio">
-  <img src="./img/thumbs/thumb-ramospereira.png" alt="Ramos Pereira Advocacia">
-</div>
-</article>
-
-</section>
-
+ </div>
 <a class="botao" href="https://www.behance.net/rafaelfraga" target="_blank">Ver Mais</a>
-</div>
-</section>
+</article>
 
 <div class="bg">
 <div data-anime="scroll" class="skills container">

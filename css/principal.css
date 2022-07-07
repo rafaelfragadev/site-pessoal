@@ -59,16 +59,16 @@
 /* Cards Inicio */
 
 .cards-introducao {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
 .card-inicio {
+  flex: 1;
   border: 1px solid var(--cor-2);
   border-radius: 30px;
-  padding: 50px 35px;
-  box-sizing: border-box;
+  padding: 35px;
 }
 
 .card-inicio h3 {
@@ -87,32 +87,23 @@
 }
 
 @media(max-width: 900px) {
-  .cards-introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
+  .card-inicio {
+    flex: auto;
+    max-width: 345px;
+    box-sizing: border-box;
   }
-  
+  .cards-introducao {
+    justify-content: center;
+  }
   .introducao-conteudo h1 {
     min-height: 110px;
-  }
-  .introducao-conteudo p {
-    margin-top: 0;
-  }
-  .cards-introducao .col-3 {
-    grid-column: span 2;
   }
   .introducao-conteudo::after {
     margin: 20px auto;
 }
 }
+
 @media(max-width: 600px) {
-  .cards-introducao {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .cards-introducao .col-3 {
-    grid-column: 1;
-  }
   .skills {
     display: none;
   }

@@ -34,12 +34,6 @@ font:  0.813rem/1.4 "Poppins", sans-serif;
 }
 
 @media(max-width: 900px) {
-  .font-1-t {
-    font-size: 3.375rem;
-  }
-  .font-2-p {
-    font-size: 1rem;
-  }
   .font-3-t {
     font-size: 1.313rem;
    }
@@ -51,12 +45,24 @@ font:  0.813rem/1.4 "Poppins", sans-serif;
  }
 }
 
+@media(max-width: 522px) {
+  .font-2-p {
+    font-size: 1rem;
+  }
+  .font-1-t {
+    font-size: 3.375rem;
+  }
+}
+
+@media(max-width: 460px) {
+  .font-1-t {
+    font-size: 2.8rem;
+  }
+}
+
 @media(max-width: 400px) {
   .font-1-p {
     font-size: .80rem;
-  }
-  .font-1-t {
-    font-size: 2.8rem;
   }
   .font-3-st {
     font-size: .80rem;

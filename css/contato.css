@@ -97,16 +97,17 @@
 
 /* Copy */
 .copy {
-  background-color: var(--cor-0);
-  padding: 25px;
-}
-.copy-conteudo {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-between;
 }
+
+.copy-bg {
+  background-color: var(--cor-0);
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
 .logo-rodape {
   display: flex;
   align-items: center;

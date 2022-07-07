@@ -89,7 +89,7 @@
 @media(max-width: 900px) {
   .card-inicio {
     flex: auto;
-    max-width: 345px;
+    max-width: 330px;
     box-sizing: border-box;
   }
   .cards-introducao {

@@ -97,9 +97,8 @@
 
 /* Copy */
 .copy {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .copy-bg {
@@ -117,17 +116,24 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  justify-content: flex-end;
 }
 
 @media(max-width: 700px) {
   .copy-conteudo {
     justify-content: center;
   }
+  .copy {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
 }
 
 @media(max-width: 500px) {
   .logo-rodape {
     flex-direction: column;
+    text-align: center;
   }
   .copy-conteudo {
     text-align: center;

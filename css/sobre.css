@@ -4,19 +4,20 @@
 .sobre-conteudo h2 {
   margin-bottom: 20px;
 }
-.sobre-flex{
-  display: flex;
-  align-items: center;
+.sobre-display{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 35px;
   padding: 70px 0;
-  flex-wrap: wrap;
+}
+.sobre-conteudo img {
+  object-fit: cover;
+  height: 100%;
 }
 .sobre-conteudo p {
   max-width: 535px;
 }
-.sobre-conteudo {
-  margin-left: 35px;
-  flex: 1;
-}
+
 .redes-sociais {
   display: flex;
   gap: 15px;
@@ -25,11 +26,16 @@
 }
 
 @media(max-width: 900px){
+  .sobre-display{
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 30px 0;
+    justify-items: center;
+  }
   .sobre-flex {
     flex-direction: column-reverse;
   }
   .sobre-conteudo {
-    margin-left: 0;
     margin-bottom: 30px;
   }
 }

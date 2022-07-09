@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Fraga - Designer e Desenvolvedor Front End</title>
-    <meta name="description" content="Criação de sites, identidade visual, landing pages, e-mail marketing, design gráfico e serviços relacionados a área.">
+    <meta name="description" content="Criação de sites otimizados para a Web, com as melhores práticas de desenvolvimento. Sites rápidos, bonitos e que entregam resultado para sua empresa.">
+    <meta name="keywords" content="sites, desenvolvimento de sites, site no Rio Grande do Sul, sites em Capivari do Sul, sites no interior do estado, sites para pequenas empresas, site institucional, sites institucionais, landing pages, e-mail marketing, identidade visual, logotipo, logo">
+    <meta name="robots" content="index, follow">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143287683-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-143287683-1');
+    </script>
+  <!-- Fechamento Global site tag (gtag.js) - Google Analytics -->
+
     <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="stylesheet" href="./css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +74,7 @@
   </main>
 
 <article id="sobre" class="sobre-bg">
-<div data-anime="scroll" class="container sobre-flex">
+<div data-anime="scroll" class="container sobre-display">
   <picture>
     <source media="(max-width: 800px)" srcset="./img/perfil/foto-sobre.png">
     <img src="./img/perfil/foto-sobre.png" width="510" height="459" alt="Sobre Rafael Fraga">
@@ -253,10 +265,10 @@
 </div>
 </div>
 
-<footer class="footer bg">
+<footer class="footer">
 
-<section id="contato" class="contato">
-  <div data-anime="scroll" class="container contato-bg">
+<section id="contato" class="contato bg">
+  <div data-anime="scroll" class="container">
   <section class="contato-dados">
     <h2 class="font-4-t cor-0">Contato<span>;</span></h2>
     <p class="font-1-p cor-0"><strong>Vamos começar nosso projeto !</strong></p>
@@ -293,6 +305,7 @@
           <label for="mensagem"></label>
           <textarea rows="5" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
         </div>
+        <button class="botao col-2">Enviar Mensagem</button>
       </form>
     </section>
   </div>

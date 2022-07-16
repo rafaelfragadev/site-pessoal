@@ -4,7 +4,7 @@
   align-items: center;
   padding: 1.5rem 1rem;
   box-sizing: border-box;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: fixed;
   width: 100%;
   background: rgba(21,23,25,0.7);
